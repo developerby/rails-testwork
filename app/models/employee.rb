@@ -3,4 +3,5 @@ class Employee < ActiveRecord::Base
 
   validates :name, presence: true
   validates :company, presence: true
+  validates :hired_at, presence: true, on: :strict
 end
